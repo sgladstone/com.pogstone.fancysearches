@@ -302,7 +302,7 @@ AND    p.entity_id    = e.id
           $all_columns_to_display =  $this->util_get_all_column_names_to_display();
           
            $check_columns_to_display = false;
-           if($user_columns_to_display.is_array() && count($user_columns_to_display) > 0 ){
+           if(is_array($user_columns_to_display) && count($user_columns_to_display) > 0 ){
            	 $check_columns_to_display = true;
            }
                                      
